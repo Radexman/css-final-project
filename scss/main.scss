@@ -1,0 +1,14 @@
+// ======= Partials ========
+@import './config';
+@import './table';
+
+// ===== Main Layout =======
+
+body {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-left: $border-primary;
+    border-right: $border-primary;
+}
