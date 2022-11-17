@@ -26,14 +26,21 @@ textarea {
 
 // ===== Variables ===== //
 
+// Typography
 $ff: 'Nunito', sans-serif;
 $ff-heading: 'Fugaz One', cursive;
 $fs: clamp(1rem, 2.2vh, 1.5rem);
+
+// Colors
 $clr-bg: orange;
 $clr-bg-fade: rgb(252, 220, 160);
 $bg-image: linear-gradient(to bottom, $clr-bg, $clr-bg-fade);
 $clr-bg-body: #fff;
 $clr-font: #000;
+$clr-border: #333;
+
+// Borders
+$borders: 1px solid $clr-border;
 
 // ===== Utilities ===== //
 

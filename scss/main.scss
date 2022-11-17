@@ -4,3 +4,26 @@
 
 // ===== General Styling =======
 
+html {
+    scroll-behavior: smooth;
+    font-size: $fs;
+    font-family: $ff;
+    background-color: $clr-bg;
+    background-image: $bg-image;
+}
+
+body {
+    background-color: $clr-bg-body;
+    color: $clr-font;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: $borders;
+    border-right: $borders;
+    box-shadow: 0 0 10px $clr-border;
+}
+
+h1, h2, h3 {
+    font-family: $ff-heading;
+    letter-spacing: .1em;
+}
