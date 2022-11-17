@@ -1,16 +1,51 @@
-// ======== Variables ==========
-$border-primary: 1px solid #333;
+// ====== Font Stack ====== //
 
-// ====== General Styling ======
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
-* {
+// ====== Normalize ======= //
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-size: 22px;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-// ======== Utilities ========
+input, 
+button,
+textarea {
+    font: inherit;
+}
+
+// ===== Variables ===== //
+
+$ff: 'Nunito', sans-serif;
+$ff-heading: 'Fugaz One', cursive;
+$fs: clamp(1rem, 2.2vh, 1.5rem);
+$clr-bg: orange;
+$clr-bg-fade: rgb(252, 220, 160);
+$bg-image: linear-gradient(to bottom, $clr-bg, $clr-bg-fade);
+$clr-bg-body: #fff;
+$clr-font: #000;
+
+// ===== Utilities ===== //
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
