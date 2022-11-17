@@ -1,0 +1,28 @@
+.main {
+    padding: $padding-side $padding-tb;
+
+    &__article {
+        scroll-margin-top: 6.5rem;
+        margin: $margin;
+    }
+
+    &:first-child {
+        margin-top: 1em;
+    }
+
+    &:last-child {
+        margin-bottom: 1em;
+    }
+
+    &:last-child {
+        min-height: calc(100vh - 20rem);
+    }
+}
+
+.about__trivia {
+    margin: $margin;
+
+    &-answer {
+        margin-top: 1em;
+    }
+}

@@ -1,6 +1,11 @@
 // ======= Partials ========
 @import './config';
 @import './table';
+@import './header';
+@import './hero';
+@import './footer';
+@import './mainsection';
+@import './form';
 
 // ===== General Styling =======
 
@@ -26,4 +31,25 @@ body {
 h1, h2, h3 {
     font-family: $ff-heading;
     letter-spacing: .1em;
+}
+
+h2, h3 {
+    margin-bottom: 1em;
+    color: $clr-highlight;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a:any-link {
+    color: $clr-link;
+}
+
+a:hover, a:focus-visible {
+    color: $clr-link-hover;
+}
+
+a:active {
+    color: $clr-link-active;
 }

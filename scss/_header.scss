@@ -1,0 +1,27 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    &__h1 {
+        text-align: center;
+        background-color: $clr-header-bg;
+        color: $clr-header;
+        padding: $padding-tb $padding-side;
+    }
+
+    &__nav {
+        background-color: $clr-nav-bg;
+        border-bottom: $borders;
+        font-weight: bold;
+        box-shadow: 0 6px 5px -5px $clr-border;
+    }
+
+    &__ul {
+         padding: $padding-tb $padding-side;   
+         list-style-type: none;
+         display: flex;
+         justify-content: space-evenly;
+         gap: 1em;
+    }
+}

@@ -1,0 +1,32 @@
+.hero {
+    position: relative;
+
+    &__h2 {
+        position: absolute;
+        background-color: $clr-hero-bg;
+        color: $clr-hero;
+        padding: .25em .5em;
+        letter-spacing: .1em;
+        text-shadow: 2px 2px 5px $clr-border;
+        top: -100px;
+        left: 20px;
+        animation: showWelcome .5s ease-in-out 1s forwards;
+    }
+}
+
+@keyframes showWelcome {
+    0% {
+        top: -20px;
+        transform: skew(0deg, -5deg) scaleY(0);
+    }
+
+    80% {
+        top: 30px;
+        transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+
+    100% {
+        top: 20px; 
+        transform: skew(-10deg, -5deg) scaleY(1);
+    }
+}
