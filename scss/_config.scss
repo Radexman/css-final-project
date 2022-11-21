@@ -32,21 +32,21 @@ $ff-heading: 'Fugaz One', cursive;
 $fs: clamp(1rem, 2.2vh, 1.5rem);
 
 // Colors
-$clr-bg: orange;
-$clr-bg-fade: rgb(252, 220, 160);
 $bg-image: linear-gradient(to bottom, $clr-bg, $clr-bg-fade);
 $clr-bg-body: #fff;
-$clr-font: #000;
+$clr-bg-fade: rgb(252, 220, 160);
+$clr-bg: orange;
 $clr-border: #333;
-$clr-highlight: rgb(51, 178, 51);
-$clr-link: #000;
-$clr-link-hover: hsla(0, 0%, 0%, .6);
-$clr-link-active: orange;
+$clr-font: #000;
 $clr-header-bg: #000;
 $clr-header: #fff;
-$clr-nav-bg: #fff;
 $clr-hero-bg: rgba(51, 178, 51, .75);
 $clr-hero: #fff;
+$clr-highlight: rgb(51, 178, 51);
+$clr-link-active: orange;
+$clr-link-hover: hsla(0, 0%, 0%, .6);
+$clr-link: #000;
+$clr-nav-bg: #fff;
 
 // Borders
 $borders: 1px solid $clr-border;
@@ -71,4 +71,19 @@ $margin: clamp(1em, 2.5vh, 1.5em) 0;
 
 .center {
     text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    $clr-bg-body: #333;
+    $clr-bg-fade: gray;
+    $clr-bg: #000;
+    $clr-border: whitesmoke;
+    $clr-font: whitesmoke;
+    $clr-header: whitesmoke;
+    $clr-hero: #333;
+    $clr-highlight: whitesmoke;
+    $clr-link-active: rgb(252, 200, 103);
+    $clr-link-hover: orange;
+    $clr-link: whitesmoke;
+    $clr-nav-bg: rgb(20, 20, 20);
 }
